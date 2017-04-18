@@ -14,8 +14,7 @@ public class Clustering {
 
 	public static void main(String[] args) { 
 		String filename = "input.txt";
-		File inputFile = new File(System.getProperty("user.dir") + "\\src\\" + filename); 
-		System.out.println(inputFile.getAbsolutePath());
+		File inputFile = new File(filename); 
 		if (!inputFile.canRead()) {
             System.out.println("Required input file " + filename + " not found; exiting.\n" + inputFile.getAbsolutePath());
             System.exit(1);
