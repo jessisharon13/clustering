@@ -16,9 +16,9 @@ public class Clustering {
 		String filename = "input.txt";
 		File inputFile = new File(filename); 
 		if (!inputFile.canRead()) {
-            System.out.println("Required input file " + filename + " not found; exiting.\n" + inputFile.getAbsolutePath());
-            System.exit(1);
-        }
+            		System.out.println("Required input file " + filename + " not found; exiting.\n" + inputFile.getAbsolutePath());
+            		System.exit(1);
+       		}
 		try {
 			Scanner input = new Scanner(inputFile);
 			ArrayList<String[]> lines = new ArrayList<String[]>(); 
